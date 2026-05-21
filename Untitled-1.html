@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fandu Garamba</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+S
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background: #0f172a;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        .navbar{
+            background: rgba(15,23,42,0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand{
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+
+        .nav-link{
+            color: #d1d5db !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover{
+            color: #38bdf8 !important;
+        }
+
+        .hero{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #0f172a, #111827);
+            padding-top: 80px;
+        }
+
+        .hero img{
+            width: 320px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(56,189,248,0.5);
+            transition: 0.4s;
+        }
+
+        .hero img:hover{
+            transform: scale(1.03);
+        }
+
+        .hero h1{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero span{
+            color: #38bdf8;
+        }
+
+        .btn-custom{
+            background: #38bdf8;
+            color: white;
+            border-radius: 30px;
+            padding: 12px 25px;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .btn-custom:hover{
+            background: #0ea5e9;
+            transform: translateY(-3px);
+        }
+
+        section{
+            padding: 100px 0;
+        }
+
+        .section-title{
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2{
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        .card-custom{
+            background: #1e293b;
+            border: none;
+            border-radius: 20px;
+            transition: 0.4s;
+            color: white;
+        }
+
+        .card-custom:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .card-custom img{
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .table{
+            color: white;
+        }
+
+        .table thead{
+            background: #38bdf8;
+        }
+
+        .table tbody tr{
+            transition: 0.3s;
+        }
+
+        .table tbody tr:hover{
+            background: #1e293b;
+            transform: scale(1.01);
+        }
+
+        .badge-sks{
+            background: #38bdf8;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .form-control{
+            background: #1e293b;
+            border: none;
+            color: white;
+        }
+
+        .form-control:focus{
+            background: #1e293b;
+            color: white;
+            box-shadow: 0 0 10px #38bdf8;
+        }
+
+        footer{
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        .social-icons a{
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover{
+            color: #38bdf8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cpu-fill"></i> Fandu Garamba
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#matkul">Matakuliah</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 text-center mb-4">
+
+                    <img src="https://i.imgur.com/ejbL2vS.jpeg"
+                    alt="Fandu Garamba"
+                    class="img-fluid">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <h5 class="text-info mb-3">
+                        👋 Selamat Datang di Website Portfolio Saya
+                    </h5>
+
+                    <h1>
+                        Hallo, Nama Saya
+                        <span>Fandu Garamba</span>
+                    </h1>
+
+                    <h4 class="mb-3">
+                        Mahasiswa Sistem Komputer Semester 2
+                    </h4>
+
+                    <p class="text-light">
+                        Saya adalah mahasiswa yang memiliki minat dalam bidang
+                        teknologi, pemrograman web, desain UI/UX, dan
+                        pengembangan sistem komputer.
+
+                        Saya suka mempelajari teknologi baru dan membangun
+                        project modern yang kreatif, responsive, dan profesional.
+                    </p>
+
+                    <div class="social-icons mb-4">
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                    <a href="#kontak" class="btn btn-custom">
+                        Hubungi Saya
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Tentang Saya</h2>
+                <p>Informasi singkat tentang diri saya</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card card-custom p-4 h-100">
+
+                        <i class="bi bi-person-circle fs-1 text-info"></i>
+
+                        <h4 class="mt-3">Profil</h4>
+
+                        <p>
+                            Nama saya Fandu Garamba,
+                            mahasiswa aktif prodi Sistem Komputer semester 2.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card card-custom p-4 h-100">
+
+                        <i class="bi bi-laptop fs-1 text-info"></i>
+
+                        <h4 class="mt-3">Skill</h4>
+
+                        <p>
+                            HTML, CSS, Bootstrap, dasar JavaScript,
+                            desain web modern dan editing multimedia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card card-custom p-4 h-100">
+
+                        <i class="bi bi-lightbulb fs-1 text-info"></i>
+
+                        <h4 class="mt-3">Tujuan</h4>
+
+                        <p>
+                            Menjadi programmer profesional dan mengembangkan
+                            inovasi teknologi yang bermanfaat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-dark">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Portfolio Saya</h2>
+
+                <p>
+                    Beberapa project dan aktivitas yang saya kerjakan
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Portfolio 1 -->
+                <div class="col-md-4">
+
+                    <div class="card card-custom overflow-hidden h-100">
+
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800"
+                        class="img-fluid">
+
+                        <div class="p-3">
+
+                            <h5>Project Coding</h5>
+
+                            <p>
+                                Pengembangan website modern menggunakan
+                                Bootstrap dan desain responsive.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Portfolio 2 -->
+                <div class="col-md-4">
+
+                    <div class="card card-custom overflow-hidden h-100">
+
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800"
+                        class="img-fluid">
+
+                        <div class="p-3">
+
+                            <h5>Eksplorasi Teknologi</h5>
+
+                            <p>
+                                Belajar sistem komputer dan perkembangan
+                                teknologi digital modern.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Portfolio 3 -->
+                <div class="col-md-4">
+
+                    <div class="card card-custom overflow-hidden h-100">
+
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800"
+                        class="img-fluid">
+
+                        <div class="p-3">
+
+                            <h5>UI/UX Design</h5>
+
+                            <p>
+                                Mendesain tampilan website modern yang menarik
+                                dan user friendly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <!-- Matakuliah -->
+    <!-- Matakuliah -->
+<section id="matkul">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>
+                <i class="bi bi-journal-code table-title-icon"></i>
+                Jadwal Matakuliah Semester 2
+            </h2>
+
+            <p>
+                Jadwal perkuliahan, ruang kelas, dan dosen pengampu
+            </p>
+        </div>
+
+        <div class="table-responsive table-modern">
+
+            <table class="table table-dark align-middle text-center">
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Matakuliah</th>
+                        <th>Hari</th>
+                        <th>Ruang</th>
+                        <th>SKS</th>
+                        <th>Dosen</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+
+                        <td>
+                            <i class="bi bi-globe text-info"></i>
+                            Pemrograman Web
+                        </td>
+
+                        <td>
+                            <span class="badge-hari badge-rabu">
+                                Rabu
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="ruang-box">
+                                M.206
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge-sks">
+                                3 SKS
+                            </span>
+                        </td>
+
+                        <td>
+                            Ruly Dwi Arista, S.Kom, M.Kom
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+
+                        <td>
+                            <i class="bi bi-windows text-info"></i>
+                            Sistem Operasi
+                        </td>
+
+                        <td>
+                            <span class="badge-hari badge-rabu">
+                                Rabu
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="ruang-box">
+                                M.204
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge-sks">
+                                3 SKS
+                            </span>
+                        </td>
+
+                        <td>
+                            Hanna Willa Dhary, S.Kom
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+
+                        <td>
+                            <i class="bi bi-cpu text-info"></i>
+                            Pengantar Internet of Things
+                        </td>
+
+                        <td>
+                            <span class="badge-hari badge-kamis">
+                                Kamis
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="ruang-box">
+                                M.204
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge-sks">
+                                3 SKS
+                            </span>
+                        </td>
+
+                        <td>
+                            Hendry, S.Kom, M.Kom
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+
+                        <td>
+                            <i class="bi bi-diagram-3 text-info"></i>
+                            Perancangan Sistem Digital
+                        </td>
+
+                        <td>
+                            <span class="badge-hari badge-kamis">
+                                Kamis
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="ruang-box">
+                                M.210
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge-sks">
+                                2 SKS
+                            </span>
+                        </td>
+
+                        <td>
+                            Dr Afif Badawi, S.T., M.Kom
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+
+                        <td>
+                            <i class="bi bi-hdd-network text-info"></i>
+                            Arsitektur Komputer
+                        </td>
+
+                        <td>
+                            <span class="badge-hari badge-kamis">
+                                Kamis
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="ruang-box">
+                                M.307
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="badge-sks">
+                                3 SKS
+                            </span>
+                        </td>
+
+                        <td>
+                            Dosen Pengampu
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+<!-- Kontak -->
+<section id="kontak" class="bg-dark">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                <i class="bi bi-envelope-paper-fill text-info"></i>
+                Hubungi Saya
+            </h2>
+
+            <p>
+                Silakan hubungi saya untuk diskusi, project,
+                ataupun kolaborasi teknologi 🚀
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="contact-box">
+
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+                                    <i class="bi bi-person-fill text-info"></i>
+                                    Nama Lengkap
+                                </label>
+
+                                <input type="text"
+                                class="form-control contact-input"
+                                placeholder="Masukkan nama lengkap">
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+                                    <i class="bi bi-envelope-fill text-info"></i>
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                class="form-control contact-input"
+                                placeholder="Masukkan email aktif">
+
+                            </div>
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                <i class="bi bi-chat-dots-fill text-info"></i>
+                                Pesan
+                            </label>
+
+                            <textarea
+                            class="form-control contact-input"
+                            rows="6"
+                            placeholder="Tulis pesan anda..."></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn contact-btn w-100">
+
+                            <i class="bi bi-send-fill"></i>
+                            Kirim Pesan
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+/* Contact Section */
+.contact-box{
+    background: #111827;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.contact-input{
+    background: #1e293b !important;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white !important;
+    padding: 14px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.contact-input::placeholder{
+    color: #94a3b8;
+}
+
+.contact-input:focus{
+    background: #1e293b !important;
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56,189,248,0.3);
+}
+
+.contact-btn{
+    background: linear-gradient(to right, #38bdf8, #0ea5e9);
+    border: none;
+    padding: 14px;
+    border-radius: 14px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+}
+
+</style>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Fandu Garamba | Mahasiswa Sistem Komputer
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>.
